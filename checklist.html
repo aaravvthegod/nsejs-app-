@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter Checklist</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    .checklist-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .subject-column {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .subject-column h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .subject-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .subject-column li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .subject-column input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    button {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chapter Checklist</h1>
+
+  <div class="checklist-container">
+    <!-- Physics Column -->
+    <div class="subject-column">
+      <h2>Physics</h2>
+      <ul>
+        <li><input type="checkbox" id="mathematical-tools"> <label for="mathematical-tools">Mathematical Tools</label></li>
+        <li><input type="checkbox" id="optics"> <label for="optics">Optics</label></li>
+        <li><input type="checkbox" id="motion"> <label for="motion">Motion</label></li>
+        <li><input type="checkbox" id="laws"> <label for="laws">Laws of Motion and Gravitation</label></li>
+        <li><input type="checkbox" id="fluids"> <label for="fluids">Fluids</label></li>
+        <li><input type="checkbox" id="work-energy"> <label for="work-energy">Work and Energy</label></li>
+        <li><input type="checkbox" id="wave-sound"> <label for="wave-sound">Wave and Sound</label></li>
+        <li><input type="checkbox" id="electricity"> <label for="electricity">Electricity</label></li>
+        <li><input type="checkbox" id="magnetism"> <label for="magnetism">Magnetism</label></li>
+        <li><input type="checkbox" id="heat"> <label for="heat">Heat</label></li>
+      </ul>
+    </div>
+
+    <!-- Biology Column -->
+    <div class="subject-column">
+      <h2>Biology</h2>
+      <ul>
+        <li><input type="checkbox" id="cell"> <label for="cell">Cell</label></li>
+        <li><input type="checkbox" id="tissue"> <label for="tissue">Tissue</label></li>
+        <li><input type="checkbox" id="diversity"> <label for="diversity">Diversity</label></li>
+        <li><input type="checkbox" id="human-health"> <label for="human-health">Human Health and Diseases</label></li>
+        <li><input type="checkbox" id="improvement-food"> <label for="improvement-food">Improvement in Food Resources</label></li>
+        <li><input type="checkbox" id="life-processes"> <label for="life-processes">Life Processes</label></li>
+        <li><input type="checkbox" id="control-coordination"> <label for="control-coordination">Control and Coordination</label></li>
+        <li><input type="checkbox" id="reproduction"> <label for="reproduction">Reproduction</label></li>
+        <li><input type="checkbox" id="inheritance-variation"> <label for="inheritance-variation">Inheritance and Variation</label></li>
+        <li><input type="checkbox" id="evolution"> <label for="evolution">Evolution</label></li>
+        <li><input type="checkbox" id="molecular-inheritance"> <label for="molecular-inheritance">Molecular Inheritance</label></li>
+        <li><input type="checkbox" id="microbes"> <label for="microbes">Microbes</label></li>
+        <li><input type="checkbox" id="ecology"> <label for="ecology">Ecology</label></li>
+        <li><input type="checkbox" id="misc-biology"> <label for="misc-biology">Miscellaneous Biology</label></li>
+      </ul>
+    </div>
+
+    <!-- Chemistry Column -->
+    <div class="subject-column">
+      <h2>Chemistry</h2>
+      <ul>
+        <li><input type="checkbox" id="mole"> <label for="mole">Mole</label></li>
+        <li><input type="checkbox" id="reaction-equations"> <label for="reaction-equations">Chemical Reaction and Equations</label></li>
+        <li><input type="checkbox" id="stoichiometry"> <label for="stoichiometry">Stoichiometry and Limiting Reagent</label></li>
+        <li><input type="checkbox" id="acid-base-salt"> <label for="acid-base-salt">Acid-Base-Salt</label></li>
+        <li><input type="checkbox" id="gas-laws"> <label for="gas-laws">Gas Laws</label></li>
+        <li><input type="checkbox" id="metal-nonmetal"> <label for="metal-nonmetal">Metal-Nonmetal</label></li>
+        <li><input type="checkbox" id="periodic-classification"> <label for="periodic-classification">Periodic Classification</label></li>
+        <li><input type="checkbox" id="structure-atom"> <label for="structure-atom">Structure of Atom</label></li>
+        <li><input type="checkbox" id="misc-chemistry"> <label for="misc-chemistry">Miscellaneous Chemistry</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <button onclick="navigateTo('index.html')">Back to Home</button>
+
+  <script src="script.js"></script>
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

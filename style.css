@@ -1,0 +1,94 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .checklist-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap; /* This allows wrapping the columns on smaller screens */
+  }
+  
+  .subject-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Set a minimum width to ensure readability */
+    box-sizing: border-box;
+  }
+  
+  .subject-column h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .subject-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subject-column li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .subject-column input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .checklist-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .subject-column {
+      margin: 10px 0;
+      width: 80%; /* Make columns take more width on small screens */
+    }
+  
+    button {
+      width: 100%; /* Make the button take full width on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .subject-column h2 {
+      font-size: 20px; /* Smaller heading for each subject */
+    }
+  
+    .subject-column li {
+      font-size: 14px; /* Smaller text for list items */
+    }
+  }
+  
